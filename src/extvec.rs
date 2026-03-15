@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub trait ExtVec<T: Clone> {
     fn head_option(&self) -> Option<T>;
 }
