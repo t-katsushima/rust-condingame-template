@@ -2,6 +2,7 @@
 mod common;
 mod entity;
 mod extvec;
+mod mainfuncs;
 mod reader;
 
 #[allow(unused_imports)]
