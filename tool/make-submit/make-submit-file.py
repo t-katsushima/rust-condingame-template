@@ -6,7 +6,7 @@ from sqlalchemy import null
 
 # #![allow(non_snake_case)] や mod common; の削除
 def remove_template(lines):
-    while True:
+    while lines:
         line = lines[0]
         if line.startswith("#![") or line.startswith("mod "):
             del lines[0]
