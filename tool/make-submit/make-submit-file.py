@@ -2,8 +2,6 @@
 
 import os
 
-from sqlalchemy import null
-
 # #![allow(non_snake_case)] や mod common; の削除
 def remove_template(lines):
     while lines:
@@ -21,7 +19,6 @@ if os.path.exists(submit_file_name):
 with open(submit_file_name, 'x') as submit_file:
     submit_file.write("#![allow(non_snake_case)]\n")
 
-    target_files = null
     with open("./target-file-list.txt") as target_file_list:
         for file_name in target_file_list.readlines():
             file_name = file_name.strip()
