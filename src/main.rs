@@ -1,9 +1,5 @@
 #![allow(non_snake_case)]
-mod common;
-mod entity;
-mod extvec;
-mod mainfuncs;
-mod reader;
+mod lib;
 
 #[allow(unused_imports)]
 use rand::prelude::SliceRandom;
@@ -11,9 +7,9 @@ use rand::prelude::SliceRandom;
 use rand::{thread_rng, Rng};
 use std::time::SystemTime;
 
-use common::*;
-use entity::*;
-use reader::*;
+use lib::common::*;
+use lib::entity::*;
+use lib::reader::*;
 
 fn main() {
     let mut _rng = thread_rng();
